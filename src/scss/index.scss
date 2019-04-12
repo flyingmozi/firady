@@ -1,0 +1,103 @@
+@import 'common.scss';
+@import '_minix.scss';
+
+.wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .header{
+        width: 100%;
+        height: pxTorem(44px);
+        background: rgb(212, 122, 4);
+        display: flex;
+        padding: pxTorem(10px);
+        align-items: center;
+        h2{
+            width: 85%;
+            line-height: pxTorem(44px);
+            color: #fff;
+            text-indent: pxTorem(13px);
+            font-size: pxTorem(20px);
+        }
+        div{
+            flex: 1;
+            text-align: center;
+            i{
+                font-size: pxTorem(22px);
+                color: #fff;
+            }
+        }
+    }
+
+    .main{
+        width: 100%;
+        flex: 1;
+        overflow: auto;
+        .top{
+            width: 100%;
+            height: pxTorem(180px);
+            padding:0 pxTorem(5px);
+            margin-bottom: pxTorem(4px);
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .list{
+            width: 100%;
+            height: pxTorem(380px);
+            overflow: auto;
+            dl{
+                width: 100%;
+                height: pxTorem(70px);
+                display: flex;
+                padding: pxTorem(6px);
+                border-bottom: 1px solid #ccc;
+                display: flex;
+                align-items: center;
+                dt{
+                    width: pxTorem(60px);
+                    height:pxTorem(60px);
+                    text-align: center;
+                    line-height: pxTorem(60px);
+                    border-radius: pxTorem(5px);
+                    i{
+                        font-size: pxTorem(40px);
+                    }
+                }
+                dd{
+                    flex: 1;
+                    padding:0 pxTorem(10px);
+                    display: flex;
+                    div{
+                        flex: 1;
+                    }
+                    h3{
+                        font-size: pxTorem(18px);
+                    }
+                    i{
+                        font-size: pxTorem(20px);
+                        color: #ccc;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .footer{
+        width: 100%;
+        height: pxTorem(50px);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        i{
+            font-size: pxTorem(35px);
+            color: rgb(5, 133, 150);
+            font-weight: 600;
+        }
+    }
+}
